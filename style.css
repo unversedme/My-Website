@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100&display=swap');
+* {
+    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+header {
+    background-color: rgb(35, 33, 33);
+    color: #fff;
+    padding: 20px;
+    
+    
+  }
+
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    
+    
+    border-radius: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    float: left;
+  }
+  
+/* Add a hover effect to the navigation links */
+header nav ul li a:hover {
+    background-color: rgb(8, 8, 8);
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  header.scrolled {
+    background-color: rgb(49, 45, 45);
+  }
+  @media (max-width: 600px) {
+    /* Add styles for small screens here */
+    nav {
+
+        flex-direction: column;
+    
+      }
+  }
+
+  li {
+    border-radius: 1rem;
+  }
+  
+  /* Search Bar styling  */
+  #search {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #submit-btn {
+    /* width: 20%; */
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Comment Section Styling */
+  #comment-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #comment-form {
+    width: 100%;
+  }
+  
+  #comment-form label {
+    font-weight: bold;
+  }
+  
+  #comment-form input, #comment-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  #comment-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #comment-form button:hover {
+    opacity: 0.8;
+  }
+  
+  #comments {
+    margin-top: 30px;
+  }
+  
+  #comments .comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Recent Posts Section */
+  .posts {
+    padding: 20px;
+  }
+  
+  .posts h2 {
+    font-size: 24px;
+  
+    margin-bottom: 20px;
+  
+    text-transform: uppercase;
+  }
+  
+  .posts li {
+    list-style: none;
+  
+    margin-bottom: 20px;
+  
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .posts li h3 {
+    font-size: 20px;
+  
+    margin-bottom: 10px;
+  }
+  
+  .posts li a {
+    color: #333;
+  
+    text-decoration: none;
+  }
+  
+
+  /* main secion or articles section */
+  main {
+
+    padding: 20px;
+  
+  }
+  
+  /* Style the news sections */
+  
+  .news-section {
+  
+    border: 1px solid #ccc;
+  
+    padding: 20px;
+  
+    margin-bottom: 20px;
+  
+  }
+  
+  /* Style the footer */
+  
+ 
+  /* Stack the navigation links vertically for small screens */
+  
+  @media (max-width: 600px) {
+  
+    nav {
+  
+      flex-direction: column;
+  
+    }
+  
+    nav a {
+  
+      margin: 10px 0;
+  
+    }
+  
+  }
+  
+  /* Make the articles take up full width on small screens */
+  
+  @media (max-width: 600px) {
+  
+    article {
+  
+      width: 100%;
+  
+      margin: 0;
+  
+    }
+  
+  }
+  
+  /* Make the headings smaller on small screens */
+  
+  @media (max-width: 600px) {
+  
+    h1, h2, h3 {
+  
+      font-size: 1.2em;
+  
+    }
+  
+  }
+  
+  /* Make the images responsive */
+  
+  img {
+  
+    max-width: 100%;
+  
+    height: auto;
+  
+  }
+
+  /* like dislike comments section */
+  .review-section {
+
+    width: 50%;
+  
+    margin: 0 auto;
+  
+  }
+  body {
+    font-family: Ariel, 'sans-serif';
+    }
+  
+  .review {
+  
+    margin-bottom: 20px;
+  
+  }
+  
+  .review-text {
+  
+    font-size: 1.2em;
+  
+  }
+  
+  .review-actions {
+  
+    display: flex;
+  
+    justify-content: flex-end;
+  
+  }
+  
+  .like-button, .dislike-button {
+  
+    background-color: #f5f5f5;
+  
+    border: none;
+  
+    padding: 8px 12px;
+  
+    margin-left: 10px;
+  
+  }
+  
+  .like-button:hover, .dislike-button:hover {
+  
+    background-color: #e5e5e5;
+  
+  }
+
+  /* product specification */
+  .product-section {
+
+    width: 80%;
+  
+    margin: 0 auto;
+  
+  }
+  
+  .product-image {
+  
+    float: left;
+  
+    margin-right: 20px;
+  
+  }
+  
+  .product-image img {
+  
+    width: 200px;
+  
+  }
+  
+  .product-specifications {
+  
+    clear: both;
+  
+  }
+  
+  .product-specifications ul {
+  
+    list-style: none;
+  
+    padding: 0;
+  
+  }
+  
+  .product-specifications li {
+  
+    margin-bottom: 10px;
+  
+  }
+  
+  .product-specifications strong {
+  
+    display: inline-block;
+  
+    width: 150px;
+  
+    font-weight: bold;
+  
+  }
+  
+
+  /* blog section */
+  /* Set the font and background color for the entire blog section */
+
+#blog {
+    font-family: Arial, sans-serif;
+  
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the h2 heading */
+  
+  #blog h2 {
+    font-size: 36px;
+  
+    color: #333333;
+  
+    text-align: center;
+  
+    margin-bottom: 30px;
+  }
+  
+  /* Style the post titles */
+  
+  #blog h3 {
+    font-size: 24px;
+  
+    color: #333333;
+  
+    margin-bottom: 10px;
+  }
+  
+  /* Style the post content */
+  
+  #blog p {
+    font-size: 16px;
+  
+    color: #555555;
+  
+    line-height: 1.5;
+  }
+  
+  /* Style the unordered list */
+  
+  #blog ul {
+    list-style: none;
+  
+    padding: 0;
+  }
+  
+  /* Style each list item */
+  
+  #blog li {
+    margin-bottom: 30px;
+  
+    padding: 20px;
+  
+    background-color: #ffffff;
+  
+    box-shadow: 2px 2px 10px #cccccc;
+  }
+  /* Style for expanded post */
+  
+  .expanded p {
+    max-height: 1000px; /* or whatever height you want */
+  
+    overflow: visible;
+  }
+  
+/*   
+  .review-input {
+  
+    width: 100%;
+  
+    padding: 12px;
+  
+    margin-bottom: 20px;
+  
+    box-sizing: border-box;
+  
+  }
+  
+  .submit-button {
+  
+    background-color: #f5f5f5;
+  
+    border: none;
+  
+    padding: 8px 12px;
+  
+  }
+  
+  .submit-button:hover {
+  
+    background-color: #e5e5e5;
+  
+  }
+   */
+  
+
+  /* footer section */
+
+  footer {
+  
+    background-color: #333;
+  
+    color: #fff;
+  
+    padding: 4rem;
+  
+    text-align: center;
+  
+  }
+  
+
+  /* header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  
+  /* header nav ul li a:hover {
+    background-color: #111;
+  } */
+
+
+
+  /* header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+  } */
+  
+  /* header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  } */
+  
+  
+  

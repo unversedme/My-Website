@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML code for nav bar having a header inside which we have links to other sections -->
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#latest">Home</a></li>
+            <li><a href="#reviews">Courses</a></li>
+            <li><a href="#features">About Us</a></li>
+            <li><a href="#opinions">Contact Us</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <!-- Search Bar -->
+            <li>
+                <form>
+                <input type="text" id="search" placeholder="Search...">
+                <button type="submit" id="submit-btn">Submit</button>
+                </form>
+            </li>
+            
+
+          </ul>
+        </nav>
+      </header>
+
+      <!-- blog section -->
+      <div id="blog">
+        <h2>Latest Blog Posts</h2>
+        <ul>
+          <li>
+            <h3>Post Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a tempor faucibus, risus neque congue magna, vel tincidunt magna eros euismod quam.</p>
+          </li>
+          <li>
+            <h3>Post Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a tempor faucibus, risus neque congue magna, vel tincidunt magna eros euismod quam.</p>
+          </li>
+          <li>
+            <h3>Post Title 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a tempor faucibus, risus neque congue magna, vel tincidunt magna eros euismod quam.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- product specification -->
+
+      <div class="product-section">
+        <h2>Product Name</h2>
+        <div class="product-image">
+          <img src="cars.png" alt="Product Image">
+        </div>
+        <div class="product-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+        <div class="product-specifications">
+          <h3>Specifications</h3>
+          <ul>
+            <li>
+              <strong>Brand:</strong>
+              <span>Brand Name</span>
+            </li>
+            <li>
+              <strong>Model:</strong>
+              <span>Model Name</span>
+            </li>
+            <li>
+              <strong>Dimensions:</strong>
+              <span>10 x 10 x 10 cm</span>
+            </li>
+            <li>
+              <strong>Weight:</strong>
+              <span>1 kg</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <!-- Different articles section -->
+      <section id="latest" class="news-section">
+
+        <h2>Latest News</h2>
+    
+        <article>
+    
+          <h3>New iPhone to be released next month</h3>
+    
+          <p>According to sources, Apple is set to release their latest iPhone model next month. The new device is expected to have improved camera capabilities and a larger battery life.</p>
+    
+        </article>
+    
+        <article>
+    
+          <h3>Google unveils new augmented reality glasses</h3>
+    
+          <p>Google has announced the release of their new augmented reality glasses, set to hit the market next year. The glasses are designed to blend virtual and real-world environments.</p>
+    
+        </article>
+    
+      </section>
+    
+      <section id="reviews" class="news-section">
+    
+        <h2>Reviews</h2>
+        <article>
+          <h3>Samsung Galaxy S21 Ultra Review: A High-End Phone Worth the Price</h3>
+          <p>The Samsung Galaxy S21 Ultra offers a sleek design, a high-resolution display, and powerful performance. The camera system is also top-notch, making it a great choice for photography enthusiasts.</p>
+        </article>
+        <article>
+          <h3>MacBook Pro M1 review: A new standard for laptops</h3>
+          <p>The new MacBook Pro M1 sets a new standard for laptops with its powerful performance and long battery life. The new chip architecture also allows for improved efficiency and faster speeds.</p>
+        </article>
+      </section>
+      <section id="features" class="news-section">
+        <h2>Features</h2>
+        <article>
+          <h3>5G technology: The future of internet connectivity</h3>
+          <p>5G technology is set to revolutionize the way we connect to the internet, offering faster speeds and more reliable connections. Learn about the potential benefits and drawbacks of this new technology.</p>
+        </article>
+        <article>
+          <h3>AI in healthcare: How it's changing the industry</h3>
+          <p>Artificial intelligence is being increasingly used in healthcare, from aiding in diagnoses to streamlining administrative tasks. Learn about the latest developments and how they could impact the future of healthcare.</p>
+        </article>
+      </section>
+      <section id="opinions" class="news-section">
+        <h2>Opinions</h2>
+        <article>
+          <h3>Why open source software is the future</h3>
+          <p>Open source software offers numerous benefits, including greater flexibility, collaboration, and security. Learn about the reasons why it's becoming increasingly popular and why it's the future of software development.</p>
+        </article>
+        <article>
+          <h3>Why you should be wary of tech companies collecting your data</h3>
+          <p>Tech companies often collect and use our personal data for targeted advertising and other purposes. Learn about the potential risks and how to protect your data from being collected and misused.</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- like dislike comments section -->
+    <div class="review-section">
+
+        <h2>Your Review</h2>
+      
+        <div class="review">
+      
+          <p class="review-text">This product is great!</p>
+      
+          <div class="review-actions">
+      
+            <button class="like-button">Like</button>
+      
+            <button class="dislike-button">Dislike</button>
+      
+          </div>
+      
+        </div>
+      
+        <div class="review">
+      
+          <p class="review-text">I'm not impressed.</p>
+      
+          <div class="review-actions">
+      
+            <button class="like-button">Like</button>
+      
+            <button class="dislike-button">Dislike</button>
+      
+          </div>
+      
+        </div>
+      
+        <!-- <form>
+      
+          <textarea class="review-input"></textarea>
+      
+          <button class="submit-button">Submit</button>
+      
+        </form> -->
+      
+      </div>
+
+
+      <!-- Comment Section -->
+      <div id="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <br>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" rows="4" required></textarea>
+          <br>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div id="comments"></div>
+      </div>
+
+      
+      
+      
+
+
+
+      <!-- Recent posts section -->
+      <section class="posts">
+
+        <h2>Recent posts</h2>
+    
+        <ul>
+    
+          <li>
+    
+            <h3>Post title</h3>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+            <a href="#">Read more</a>
+    
+          </li>
+    
+          <li>
+    
+            <h3>Post title</h3>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+            <a href="#">Read more</a>
+    
+          </li>
+    
+          <li>
+    
+            <h3>Post title</h3>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+            <a href="#">Read more</a>
+    
+          </li>
+    
+        </ul>
+    
+      </section>
+    
+    </main>
+
+
+    <!-- tables -->
+
+    <!-- footer section -->
+    <footer>
+        <p>Copyright ©2022 Tech News</p>
+      </footer>
+    
+      
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
