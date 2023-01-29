@@ -10,3 +10,6 @@ jobs:
     - name: Set environment variables
       env:
         MYSQL_ROOT_PASSWORD: root
+    - name: Start the server
+      run: php -S localhost:8000
+
