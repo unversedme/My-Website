@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="from-styles.css">
+</head>
+<body>
+    <main><section>
+        <form id="college-review-form" action="form.php" method="post">
+            <h3>College Review Form</h3>
+            <label for="college-name">College Name:</label>
+            <input type="text" id="college-name" name="college-name" required>
+            <br>
+            <label for="review-text">Review:</label>
+            <textarea id="review-text" name="review-text" required></textarea>
+            <br>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+              <option value="" disabled selected>Select a rating</option>
+              <option value="1">1 - Poor</option>
+              <option value="2">2 - Fair</option>
+              <option value="3">3 - Good</option>
+              <option value="4">4 - Very Good</option>
+              <option value="5">5 - Excellent</option>
+            </select>
+            <br>
+            <button type="submit">Submit Review</button>
+          </form>
+          
+    </section></main>
+
+    <script src="form-scrpt.js"></script>
+    <!-- <form action="form.php" method="post"> -->
+
+</body>
+</html>
